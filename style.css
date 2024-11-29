@@ -337,14 +337,14 @@ section {
   display: flex;
   text-align: initial;
   flex-wrap: wrap;
-  flex-direction: row;
-  gap: 2.5rem;
+  flex-direction: column;
+  gap: 1rem;
   justify-content: space-around;
 }
 
 article {
   display: flex;
-  width: 10rem;
+  width: 100%;
   justify-content: space-around;
   gap: 0.5rem;
 }
