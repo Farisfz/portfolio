@@ -58,19 +58,19 @@ a:hover {
   text-decoration-color: rgb(181, 181, 181);
 }
 
+.banner-logo {
+  width: 60px; 
+  height: auto;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
 .logo {
   font-size: 2rem;
 }
 
 .logo:hover {
   cursor: default;
-}
-
-.banner-logo {
-  width: 60px; 
-  height: auto;
-  margin-right: 15px;
-  vertical-align: middle;
 }
 
 /* HAMBURGER MENU */
