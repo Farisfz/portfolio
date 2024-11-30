@@ -213,6 +213,13 @@ section {
   height: 2rem;
 }
 
+.icon-x {
+  cursor: pointer;
+  height: 2.3rem;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
 /* BUTTONS */
 
 .btn-container {
