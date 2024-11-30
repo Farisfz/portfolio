@@ -66,6 +66,13 @@ a:hover {
   cursor: default;
 }
 
+.banner-logo {
+  width: 60px; 
+  height: auto;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+
 /* HAMBURGER MENU */
 
 #hamburger-nav {
