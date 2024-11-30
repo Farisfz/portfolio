@@ -224,7 +224,7 @@ section {
   cursor: pointer;
   height: 2.3rem;
   margin-top: -2px;
-  margin-left: -2px;
+  margin-left: -2px !important;
 }
 
 /* BUTTONS */
