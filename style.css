@@ -66,11 +66,11 @@ a:hover {
   cursor: default;
 }
 
-.banner-logo {
+.banner {
   width: 60px; 
   height: auto;
   margin-right: 15px;
-  vertical-align: middle;
+  vertical-align: middle !important;
 }
 
 /* HAMBURGER MENU */
