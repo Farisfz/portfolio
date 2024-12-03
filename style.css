@@ -262,7 +262,23 @@ section {
   height: 2rem;
 }
 
+body.dark-mode .icon{
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  cursor: pointer;
+  height: 2rem;
+}
+
 .icon-x {
+  cursor: pointer;
+  height: 2.3rem;
+  margin-top: -2px;
+  margin-left: -2px !important;
+}
+
+body.dark-mode .icon-x {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
   cursor: pointer;
   height: 2.3rem;
   margin-top: -2px;
