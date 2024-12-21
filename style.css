@@ -673,3 +673,11 @@ footer p {
  .cl-switch > input:checked:disabled + span::after {
   background-color: #61b5b4;
  }
+
+#darkModeToggle:focus {
+  outline: none;
+}
+
+#profile img {
+  user-select: none;
+}
