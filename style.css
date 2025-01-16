@@ -681,3 +681,10 @@ footer p {
 #profile img {
   user-select: none;
 }
+
+#music {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
