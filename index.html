@@ -1,22 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="google-site-verification" content="ap8H-MSyxsKpYXkg_fqVd-pOmbG1Aa556OQTz9nTcEk" />
-    <title>Faris Fauzi</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="icon" type="image/jpg" href="assets/chillguy.jpg" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <img id="banner" src="assets/chillguy.jpg" alt="Logo" class="banner">
-        Faris Fauzi
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="ap8H-MSyxsKpYXkg_fqVd-pOmbG1Aa556OQTz9nTcEk" />
+  <title>Faris Fauzi</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="icon" type="image/jpg" href="assets/chillguy.jpg" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">
+      <img id="banner" src="assets/chillguy.jpg" alt="Logo" class="banner">
+      Faris Fauzi
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <label class="cl-switch">
+        <input id="darkModeToggle" type="checkbox">
+        <span></span>
+      </label>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Faris Fauzi</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-      <div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profpic1.webp" alt="Faris profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Faris</h1>
+      <p class="section__text__p2">Software Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Resume2024.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://www.linkedin.com/in/farisfz25/" target="_blank">
+          <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" />
+        </a>
+        <a href="https://github.com/Farisfz" target="_blank">
+          <img src="./assets/github.png" alt="My Github profile" class="icon" />
+        </a>
+        <a href="https://x.com/farisfz_" target="_blank">
+          <img src="./assets/twitter.webp" alt="My Twitter profile" class="icon-x" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="music">
+    <p class="section__text__p1">Listen while scrolling!</p>
+    <h1 class="title">Spotify</h1>
+    <iframe style="border-radius:12px; margin-bottom: 16px; margin-top: 16px;"
+      src="https://open.spotify.com/embed/track/7dI0mSvbdJTynUnEkWIom1?utm_source=generator" width="50%" height="152"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+    <iframe style="border-radius:12px; margin-bottom: 16px"
+      src="https://open.spotify.com/embed/track/2ihCaVdNZmnHZWt0fvAM7B?utm_source=generator" width="60%" height="152"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+    <iframe style="border-radius:12px; margin-bottom: 16px"
+      src="https://open.spotify.com/embed/track/3UjtIALeg72qmJiKPWBvM3?utm_source=generator" width="70%" height="152"
+      frameBorder="0" allowfullscreen=""
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+    </iframe>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/rss.webp" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>1+ year <br />Full Stack Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. Bachelors Degree<br />& Diploma</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Enthusiastic and adaptable recent graduate with a passion for continuous learning, particularly in the
+            realms of data science and programming, seeking to leverage academic foundation and eagerness to
+            contribute in a dynamic professional environment. Pursued Bachelor's Degree in Information Technology
+            specialised in Big Data at UiTM Shah Alam. Interested in technology, data science, mathematics, and
+            programming.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Data Science Apprentice</h2>
+          <p class="company-name">Fomema Sdn Bhd</p>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python Flask</h3>
+                <p>Optimized Artificial Intelligence system to automate the detection of abnormalities in chest X-rays.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Computer Vision</h3>
+                <p>Develop and train a new machine learning model by utilizing the most recent and updated image
+                  datasets, ensuring improved accuracy and performance.</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Software Development</h3>
+                <p>Regularly maintain, troubleshoot, and debug the FOMEMA Tele-radiology Solution (FTES) to ensure
+                  optimal performance and implement necessary updates for smotth operation and reliability.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="experience-sub-title">Full-Stack Developer</h2>
+          <p class="company-name">Big Dataworks Sdn Bhd</p>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Revamp Project</h3>
+                <p>Project SPEKS : Fully involved in front-end and back-end in transforming a legacy PHP system into
+                  Node.js
+                  adopting MEAN Tech stack. Integrating JPJ and KASTAM, and moved from bare metal servers to the cloud.
+                </p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>API Development</h3>
+                <p>Developed new web services, enabling seamless integration between vehicle manufacturers and the
+                  SPEKS platform.</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MEAN Stack</h3>
+                <p>Contributed to the development and maintenance of new features for MYDATA-SSM, ensuring system
+                  reliability and scalability.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="project-container">
+            <img src="./assets/autism.webp" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">ASDiagnose</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://github.com/Farisfz/ASDiagnose','_blank');">
+              Github
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="project-container">
+            <img src="./assets/image.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Manasurau</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="window.open('https://manasurau.com', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="project-container">
+            <img src="./assets/infom.webp" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">MYDATA-i</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn"
+              onclick="window.open('https://mydatainfomatica.com/', '_blank');">
+              Live Demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Photo Dump</p>
+    <h1 class="title">Gallery</h1>
+    <div class="gallbody">
+      <div class="gallery">
+        <img src="./assets/kl.jpeg">
+        <img src="./assets/fuji.jpeg">
+        <img src="./assets/fly.jpg">
+        <img src="./assets/bukit.jpeg">
+        <img src="./assets/baby.jpeg" >
+        <img src="./assets/bic.jpeg" >
+        <img src="./assets/fujiflower.jpeg" >
+        <img src="./assets/train.jpeg" >
+        <img src="./assets/album.jpeg" >
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com" target="_blank">mfaris259@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/farisfz25/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -24,341 +292,10 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
-      <div class="container">
-        <label class="cl-switch">
-          <input id="darkModeToggle" type="checkbox">
-          <span></span>
-        </label>
-      </div>
     </nav>
-    
-    <nav id="hamburger-nav">
-      <div class="logo">Faris Fauzi</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profpic1.webp" alt="Faris profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Faris</h1>
-        <p class="section__text__p2">Software Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Resume2024.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <a href="https://www.linkedin.com/in/farisfz25/" target="_blank">
-            <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            />
-          </a>          
-          <a href="https://github.com/Farisfz" target="_blank">
-            <img
-              src="./assets/github.png"
-              alt="My Github profile"
-              class="icon"
-            />
-          </a>
-          <a href="https://x.com/farisfz_" target="_blank">
-            <img
-              src="./assets/twitter.webp"
-              alt="My Twitter profile"
-              class="icon-x"
-            />
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/rss.webp"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ year <br />Full Stack Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>B.Sc. Bachelors Degree<br />& Diploma</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Enthusiastic and adaptable recent graduate with a passion for continuous learning, particularly in the
-              realms of data science and programming, seeking to leverage academic foundation and eagerness to
-              contribute in a dynamic professional environment. Pursued Bachelor's Degree in Information Technology
-              specialised in Big Data at UiTM Shah Alam. Interested in technology, data science, mathematics, and programming.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Data Science Apprentice</h2>
-            <p class="company-name">Fomema Sdn Bhd</p>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python Flask</h3>
-                  <p>Optimized Artificial Intelligence system to automate the detection of abnormalities in chest X-rays.</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Computer Vision</h3>
-                  <p>Develop and train a new machine learning model by utilizing the most recent and updated image datasets, ensuring improved accuracy and performance.</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Software Development</h3>
-                  <p>Regularly maintain, troubleshoot, and debug the FOMEMA Tele-radiology Solution (FTES) to ensure optimal performance and implement necessary updates for smotth operation and reliability.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Full-Stack Developer</h2>
-            <p class="company-name">Big Dataworks Sdn Bhd</p>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Revamp Project</h3>
-                  <p>Project SPEKS : Fully involved in front-end and back-end in transforming a legacy PHP system into Node.js
-                    adopting MEAN Tech stack. Integrating JPJ and KASTAM, and moved from bare metal servers to the cloud.</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>API Development</h3>
-                  <p>Developed new web services, enabling seamless integration between vehicle manufacturers and the
-                    SPEKS platform.</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>MEAN Stack</h3>
-                  <p>Contributed to the development and maintenance of new features for MYDATA-SSM, ensuring system
-                    reliability and scalability.</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="project-container">
-              <img
-                src="./assets/autism.webp"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">ASDiagnose</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/Farisfz/ASDiagnose','_blank');"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="project-container">
-              <img
-                src="./assets/image.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Manasurau</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://manasurau.com', '_blank');"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="project-container">
-              <img
-                src="./assets/infom.webp"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">MYDATA-i</h2>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://mydatainfomatica.com/', '_blank');"
-              >
-                Live Demo
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
+    <p>Copyright &#169; 2025 farisxmina</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-    <section id="music">
-      <p class="section__text__p1">@Kendy</p>
-      <h1 class="title">Spotify</h1>
-      <iframe style="border-radius:12px; margin-bottom: 16px; margin-top: 16px;" 
-              src="https://open.spotify.com/embed/track/7dI0mSvbdJTynUnEkWIom1?utm_source=generator" 
-              width="50%" height="152" frameBorder="0" allowfullscreen="" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-      </iframe>
-      <iframe style="border-radius:12px; margin-bottom: 16px" 
-              src="https://open.spotify.com/embed/track/2ihCaVdNZmnHZWt0fvAM7B?utm_source=generator" 
-              width="60%" height="152" frameBorder="0" allowfullscreen="" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-      </iframe>
-      <iframe style="border-radius:12px; margin-bottom: 16px" src="https://open.spotify.com/embed/track/3UjtIALeg72qmJiKPWBvM3?utm_source=generator" 
-              width="70%" height="152" frameBorder="0" allowfullscreen="" 
-              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-      </iframe>
-    </section>
-
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:examplemail@gmail.com" target="_blank">mfaris259@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/farisfz25/" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 farisxmina</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>

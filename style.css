@@ -478,6 +478,45 @@ article .icon {
   cursor: default;
 }
 
+.gallery {
+  --s: 200px; /* control the size */
+  --g: 7px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3,auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  /* filter: grayscale(80%); */
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
+
+.gallbody {
+  margin: 0;
+  /* min-height: 100vh; */
+  margin-top: 1%;
+  margin-bottom: 10%;
+  display: grid;
+  place-content: center;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
