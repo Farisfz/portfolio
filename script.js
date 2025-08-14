@@ -22,11 +22,11 @@ function toggleMenu() {
   icon.classList.toggle("open");
 }
 
-document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('click', () => {
-    window.open(img.src, '_blank');
-  });
-});
+// document.querySelectorAll('img').forEach(img => {
+//   img.addEventListener('click', () => {
+//     window.open(img.src, '_blank');
+//   });
+// });
 
 // document.addEventListener('contextmenu', function (e) {
 //   e.preventDefault();
